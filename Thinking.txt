@@ -1,0 +1,24 @@
+1. Wireframing -  draw a rough sketch of what you are actually going to build.
+2. Functionality 
+    * SIgnin
+    * Signup
+    * Create a channel 
+    * Send message in a channel
+    * Join a channel
+    * Search for a channel
+3. Data - storing msgs , storing users, channels of application
+4. UI - React( javascript ui library, helps us to to build user interfaces, creates UI in component form , at end link all componenets to form react application)
+https://www.behance.net/gallery/87726467/Slack-Redesign
+
+UI components
+* Sidebar 
+    * list of channnels
+    * list of direct messages
+* Main container
+    * header
+    * msg component
+    * create msg component
+* Sign in form
+* Signup
+    
+
