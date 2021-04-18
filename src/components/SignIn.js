@@ -3,11 +3,12 @@ import React, {Component} from 'react';
 class SignIn extends Component{
     render(){
         return(
-            <div>
-                SignIn
+            <div className="signin-form">
+                <h1>SignIn/Sign Up</h1>
+                <button>Sign in with Google/Signup with Google</button>
             </div>
         );
     }
-}
+}  
 
 export default SignIn;
