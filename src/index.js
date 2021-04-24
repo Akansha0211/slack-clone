@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
+import UserProvider from './providers/UserProvider';
 
 import './index.css';
 import {App, SignIn} from './components';
@@ -9,10 +10,12 @@ import {App, SignIn} from './components';
 
 
 ReactDOM.render(
-<BrowserRouter>
-    <App />
-</BrowserRouter>,
-document.getElementById('root')
+    <UserProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </UserProvider>,
+    document.getElementById('root')
 );
 
 

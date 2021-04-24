@@ -2,19 +2,25 @@ import React from 'react';
 import {SignIn, Slack} from './';
 import{Switch, Route} from 'react-router-dom';
 
-function Home(){
-  return (
-    <div>Home</div>
-  )
-}
+// const PrivateRoute = (props) =>{
+//   const {component:Component, isLoggedIn, ...others} = props;
+//   return(
+//     <Route
+//       {...others}
+//       render = {()={
+
+//       }}
+//     />;
+//   )
+// };
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" component={SignIn}/>
-        <Route exact path="/home" component={Home}/>
-        <Route exact path="/slack" component={Slack}/>
+        <Route exact path="/login" component={SignIn}/>
+        <Route exact path="/signup" component={SignIn}/>
+        <Route exact path="/" component={Slack}/>
       </Switch>
     </div>
   );
